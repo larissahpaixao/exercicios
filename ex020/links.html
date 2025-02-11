@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+        color: red;
+        text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+        color: brown;
+        text-decoration: underline;
+        font-weight: bold;
+        }
+
+    a:active {
+        color: yellow;
+    }
+
+    .especial{
+color: black
+    }
+
+    .especial:visited {
+        color: blue;
+    }
+    .especial:hover {
+        color: blueviolet;
+    }
+
+    .especial::before {
+        content: '→';
+        
+    }
+    .especial::after {
+        content: '←';
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="external">Instagram</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external" class="especial">Youtube</a></li>
+        <li><a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank" rel="external">Facebook</a></li>
+    </ul>
+</body>
+</html>
